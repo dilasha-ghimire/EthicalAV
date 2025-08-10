@@ -160,8 +160,6 @@ python -m streamlit run app.py
 
 ## 🎓 Academic Relevance
 
-## 🎓 Academic Relevance
-
 This project provides a practical framework to:
 
 - Compare theoretical ethical models in autonomous driving.
