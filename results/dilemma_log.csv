@@ -1,0 +1,10 @@
+scenario,mode,decision,screenshot
+car_vs_car,utilitarian,swerve_left,car_vs_car_utilitarian.png
+car_vs_car,deontological,brake,car_vs_car_deontological.png
+car_vs_car,virtue,slow down,car_vs_car_virtue.png
+car_vs_pedestrian,utilitarian,swerve_left,car_vs_pedestrian_utilitarian.png
+car_vs_pedestrian,deontological,brake,car_vs_pedestrian_deontological.png
+car_vs_pedestrian,virtue,swerve_left,car_vs_pedestrian_virtue.png
+pedestrian_vs_pedestrian,utilitarian,brake,pedestrian_vs_pedestrian_utilitarian.png
+pedestrian_vs_pedestrian,deontological,brake,pedestrian_vs_pedestrian_deontological.png
+pedestrian_vs_pedestrian,virtue,brake,pedestrian_vs_pedestrian_virtue.png
