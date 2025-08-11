@@ -153,7 +153,7 @@ python -m streamlit run app.py
 
 ```bash
 # Build confusion matrix images
-python evaluate_confusion_matrices.py
+python evaluate_confusion_matrix.py
 
 # Compute and save metrics summary CSV
 python metrics_runner.py
