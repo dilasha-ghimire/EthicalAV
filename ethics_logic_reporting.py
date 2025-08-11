@@ -1,4 +1,4 @@
-# ethics_engine.py
+# ethics_logic_reporting.py
 # This file defines simplified ethical decision-making rules
 # for three different philosophical approaches:
 # Utilitarianism, Deontological ethics, and Virtue ethics.
