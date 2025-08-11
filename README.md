@@ -188,8 +188,8 @@ It demonstrates that rule-based ethical frameworks can be logically applied to A
 
 ## 📝 Acknowledgements
 
-- [CARLA Simulator](https://carla.org/)
-- Coventry University / Softwarica College
+- Coventry University
+- Softwarica College of IT & E-commerce
 - Supervisor: Mr. Manoj Shrestha
 
 ---
