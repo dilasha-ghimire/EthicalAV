@@ -89,10 +89,13 @@ EthicalAV/
 ├── recordings/                   # CARLA video recordings
 ├── results/                      # Logs of decisions (CSV)
 ├── screenshots/                  # CARLA scenario screenshots
+├── visualizations/               # Saved plots & summary metrics (generated)
 ├── app.py                        # Streamlit demo (Teacher vs Student)
 ├── ethics_engine.py              # Base ethical decision rules
 ├── ethics_logic_reporting.py     # Text-based testing of rules
+├── evaluate_confusion_matrix.py  # Builds confusion matrix plots per mode
 ├── label_data.py                 # Synthetic dataset generator (teacher labels)
+├── metrics_runner.py             # Evaluates metrics (acc/prec/recall/F1/AUC/spec)
 ├── rules_adapter.py              # Refines base rules with extra features
 ├── run_simulation.py             # Runs theoretical rules
 ├── simulation.py                 # CARLA-based visual simulation
@@ -116,7 +119,7 @@ EthicalAV/
 python -m pip install numpy pandas scikit-learn joblib streamlit carla matplotlib
 ```
 
-### 3. Run the theoritical simulation
+### 3. Run the theoretical simulation
 
 ```bash
 python run_simulation.py
@@ -146,15 +149,27 @@ python train_models.py
 python -m streamlit run app.py
 ```
 
+### 8. (Optional) Generate evaluation visuals & metrics
+
+```bash
+# Build confusion matrix images
+python evaluate_confusion_matrices.py
+
+# Compute and save metrics summary CSV
+python metrics_runner.py
+```
+
 ---
 
 ## 📊 Output
 
 - **From run_simulation.py / simulation.py**: Screenshots, logs, optional CARLA recordings
-
 - **From label_data.py**: Three CSV datasets in `labeled_data/`
 - **From train_models.py**: Three `.pkl` models in `models/`
 - **From app.py**: Side-by-side Teacher vs Student predictions
+- **From evaluate_confusion_matrix.py**:
+  PNG confusion matrices saved to `visualizations/` (one per mode)
+- **From metrics_runner.py**: `visualizations/model_metrics_summary.csv` with Accuracy, Precision/Recall/F1 (macro), Specificity (macro), and AUC-ROC (macro-OvR)
 
 ---
 
