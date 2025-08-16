@@ -63,6 +63,8 @@ This project explores the integration of ethical decision-making into autonomous
 - Features used:
   - Categorical: `name` (type of ethical dilemma scenario), `child_present`
   - Numeric: `left_risk`, `right_risk`, `speed_kph`
+- The student was trained using a **Random Forest classifier**.
+  - Chosen for its robustness with mixed data types, non-linear decision boundaries, and minimal tuning requirements.
 - **Purpose:** Teach a model to replicate the rule-based teacher’s decision-making.
 
 ---
